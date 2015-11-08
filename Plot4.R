@@ -10,11 +10,7 @@ rm(data)
 datetime <- paste(as.Date(data1$Date), data1$Time)
 data1$Datetime <- as.POSIXct(datetime)
 #6. this represents the part that will be changed in each code
-# Plot3 in a line graph with 3 variables
-# Arguments submetering vs (~) Datetime (built earlier)
-# Plot type is a line graph or type = "l"
-# Ylab = "Energy sub metering"
-# xlab = "<blank>"
+# par to gain propper parameters for graphics this took forever
 par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(0,0,2,0))
 with(data1, {
     #Replot "plot 2"
